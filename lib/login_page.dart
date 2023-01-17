@@ -22,7 +22,7 @@ class _LoginscreenState extends State<Loginscreen> {
             margin: EdgeInsets.symmetric(horizontal: 30),
             child: ElevatedButton(
               child: Text(
-                'Login with Gmail',
+                'Login',
                 style: TextStyle(color: Colors.black),
               ),
               style: ElevatedButton.styleFrom(

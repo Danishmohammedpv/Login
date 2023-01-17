@@ -32,8 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ElevatedButton(
                 onPressed: () async {
                   await FirebaseServices().signOut();
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Loginscreen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Loginscreen()));
                 },
                 child: const Text(
                   'Logout',
