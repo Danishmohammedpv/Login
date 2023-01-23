@@ -1,11 +1,6 @@
-// import 'package:firebase2/Screens/login.dart';
-// import 'package:firebase2/services/firebase_services.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/src/widgets/container.dart';
-// import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_signin_2/firebase.dart';
 import 'package:google_signin_2/login_page.dart';
 
@@ -19,15 +14,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   TextEditingController noteController = TextEditingController();
   User? userid = FirebaseAuth.instance.currentUser;
-  // final _controller = TextEditingController();
 
-  // Future<void> _saveTask() async {
-  //   final taskName = _controller.text;
-  //   await FirebaseFirestore.instance
-  //       .collection("Tasks")
-  //       .add({"name": _saveTask});
-  //   _controller.clear();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +46,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: TextFormField(
               maxLines: null,
               controller: noteController,
-              // controller: _controller,
               decoration: InputDecoration(hintText: "Enter tasks"),
             )),
             TextButton(
@@ -79,8 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       print("error $e");
                     }
                   }
-
-                  // await _saveTask();
                 }),
                 child: Text('Save')),
               

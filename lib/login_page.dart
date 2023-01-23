@@ -1,5 +1,3 @@
-// import 'package:firebase2/Screens/Home.dart';
-// import 'package:firebase2/services/firebase_services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_signin_2/firebase.dart';
 import 'package:google_signin_2/homae_page.dart';
