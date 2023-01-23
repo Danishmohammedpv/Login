@@ -1,6 +1,5 @@
 // import 'package:firebase2/Screens/login.dart';
 // import 'package:firebase2/services/firebase_services.dart';
-import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -33,9 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-        body: Center(
-            child: Column(
+      appBar: AppBar(),
+      body: Center(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.network(FirebaseAuth.instance.currentUser!.photoURL!),
@@ -84,7 +83,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   // await _saveTask();
                 }),
                 child: Text('Save')),
+              
           ],
-        )));
+        ),
+      ),
+    );
   }
 }
